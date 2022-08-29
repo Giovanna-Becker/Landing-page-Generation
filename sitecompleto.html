@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-roxo">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <h2>BeYou</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#sobre"><h5>Sobre</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#automaquiagem"><h5>Automaquiagem</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#produtos"><h5>Produtos</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contato"><h5>Contato</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#redessociais"><h5>Redes sociais</h5></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/flat-makeup-artist-youtube-thumbnail_23-2149345179.webp" class="d-block w-100"
+                    alt="Dicas para maquiagem">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/makeup-tutorial-youtube-thumbnail_23-2148568291.webp" class="d-block w-100"
+                    alt="Maquiagem natural">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Jumbotrom -->
+    <div class="jumbotron jumbotron-fluid mt-5">
+        <div class="container" id="sobre">
+            <h2 class=" text-roxo d-flex justify-content-center">Sobre</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae amet ex non modi inventore
+                earum fugit similique. Esse, nobis eum atque dolor dicta aspernatur minima corrupti veritatis nesciunt
+                non perspiciatis.</p>
+        </div>
+    </div>
+
+    <!-- Vídeo -->
+    <div class=" bg-roxo text-light mt-5 pt-5" id="automaquiagem">
+
+        <h2 class="d-flex justify-content-center">Tutorial de automaquiagem</h2>
+
+        <div class="d-flex justify-content-around bg-roxo">
+
+            <div class="d-flex flex-column justify-content-center paragrafo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt doloremque fugiat labore ex,
+                    veniam
+                    distinctio, beatae rem, laboriosam nostrum eum debitis id. Provident, temporibus perferendis.
+                    Obcaecati
+                    ratione minus aperiam quia.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt doloremque fugiat labore ex,
+                    veniam
+                    distinctio, beatae rem, laboriosam nostrum eum debitis id. Provident, temporibus perferendis.
+                    Obcaecati
+                    ratione minus aperiam quia.</p>
+            </div>
+            <div>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/4eFxe3MO6M0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="mb-5 mt-5"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="margem row d-flex justify-content-center mt-5" id="produtos">
+        <h2 class="d-flex justify-content-center text-roxo mb-5">Produtos</h2>
+        <div class="card" style="width: 18rem;">
+            <img src="assets/img/1035181_palette-de-sombras-crystal-edicao-limitada_s3_637848636713858467.jpg"
+                class="card-img-top mt-3" alt="Paleta de sombras Nina Secrets">
+            <div class="card-body">
+                <h5 class="card-title text-roxo">Nina Secrets</h5>
+                <p class="card-text">Paleta de sombras crystal edição limitada</p>
+                <a href="#" class="btn bg-roxo text-light ">R$149,90</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="assets/img/1035526_base-serum-fps-20-feels-mood-ruby-rose_s3_637890047727216476.jpg"
+                class="card-img-top mt-3" alt="Base Sérum Ruby Rose">
+            <div class="card-body">
+                <h5 class="card-title text-roxo">Ruby Rose</h5>
+                <p class="card-text">Base sérum fps 20 feels mood</p>
+                <a href="#" class="btn bg-roxo text-light mt-4">R$24,90</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="assets/img/1035676_bt-marble-precious-gloss_s4_637957372048442263.jpg" class="card-img-top mt-3"
+                alt="bt marble Bruna Tavares">
+            <div class="card-body">
+                <h5 class="card-title text-roxo">Bruna Tavares</h5>
+                <p class="card-text">Bt marble precious gloss</p>
+                <a href="#" class="btn bg-roxo text-light mt-4">R$36,90</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário -->
+    <form class="container m-auto formulario" id="contato">
+        <h2 class="d-flex justify-content-center text-roxo mt-5">Contato</h2>
+        <div class="mb-3 mt-5">
+            <label for="nome" class="form-label">Digite seu nome</label>
+            <input type="text" class="form-control" id="nome" onkeyup="validarNome()">
+            <div id="txtNome"></div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Digite seu email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@example.com" onkeyup="validarEmail()">
+          <div id="txtEmail"></div>
+        </div>
+        <div class="mb-3">
+            <label for="assunto" class="form-label">Escreva o assunto</label>
+            <textarea nome="assunto" class="form-control" id="assunto" rows="3" onkeyup="validarAssunto()"></textarea>
+            <div id="txtAssunto"></div>
+        </div>
+        
+        </div>
+        <button type="submit" class="btn bg-roxo text-light" onclick="enviar()">Enviar</button>
+      </form>
+
+    <!-- Footer -->
+    <footer class="d-flex bg-roxo flex-column justify-content-center mt-5" id="redessociais">
+
+        <div class="m-auto mt-3 ">
+            <div class="logos align-items-center m-auto">
+                <a class="logo p-1" href="https://www.instagram.com/giio_becker/"><img   src="assets/img/instagram.png" alt="Link do Instagran"></a>
+                <a class="logo p-1" href="https://github.com/Giovanna-Becker"><img src="assets/img/github.png" alt="Link do GitHub"></a>
+                <a class="logo p-1" href="https://www.linkedin.com/in/giovanna-becker/"><img src="assets/img/linkedin.png" alt="Link do LinkedIn"></a>
+            </div>
+
+            <p class="text-light mt-2"> Todos os direitos reservados: Giovanna Becker</p>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/Js/script.js"></script>
+
+</body>
+
+</html>
